@@ -1,0 +1,111 @@
+.App {
+  text-align: center;
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  max-width: 100vw;
+  max-height: 100vh;
+  overflow: hidden;
+  flex-wrap: wrap;
+}
+
+.row {
+  flex-direction: row;
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.col {
+  flex-direction: column;
+  display: flex;
+  flex: 1 1 50%;
+  min-width: 155px;
+  max-height: 30vh;
+}
+
+.infListContainer {
+  /* border: 1px solid black; */
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  flex-wrap: nowrap;
+}
+
+.verticalList {
+  height: 100%;
+  flex-direction: column;
+  width: fit-content;
+}
+
+.horizontalList {
+  width: 100%;
+  flex-direction: row;
+  height: fit-content;
+}
+
+.overlayItem {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.card {
+  padding: 3px;
+  margin: 3px;
+  border: 1px solid black;
+  border-radius: 2px;
+  text-align: right;
+}
+
+.activeCard {
+  transition: margin 0.2s;
+  margin-left: -1rem;
+  border: none;
+  /* position: absolute; */
+}
+
+.activePhysicalCard {
+  border: none;
+  /* position: absolute; */
+}
+
+input {
+  max-width: 100px;
+  margin: 5px 3px 0 3px;
+  text-align: right;
+  padding: 5px 35px 5px 0;
+}
+
+
+.logo {
+  animation: logo-spin infinite 20s linear;
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.link {
+  color: #b318f0;
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
